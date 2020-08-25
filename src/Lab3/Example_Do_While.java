@@ -4,32 +4,18 @@ import java.util.Scanner;
 
 public class Example_Do_While {
     public  static void  main(String[] args) {
-        //define account
-        String username = "admin";
-        String password = "1234";
 
 
-        //create Scanner object as sc
-        Scanner sc = new Scanner(System.in);
-
-        int count = 0;
+        Scanner SC = new Scanner(System.in);
+        int num;
         do {
-            System.out.print("Username: ");
-            String u = sc.nextLine();
-            System.out.print("Password: ");
-            String p = sc.nextLine();
-            if (u.equals(username) && p.equals(password)) {
-                System.out.println("Welcome to MT System.");
-                break;
-            } else {
-                System.out.println("Username or Password is not correct.");
-                count++;
-                if (count == 3) {
-                    System.out.println("Your account has been locked. Please, contact Admin");
-                }
-            }
-        } while (count < 3);
+            System.out.println("Enter integer: ");
+            num = SC.nextInt();
+        }while (num != 0);
+        System.out.println("End, Good Bye. ");
+
+
+
 
     }
 }
-
