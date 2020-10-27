@@ -20,6 +20,10 @@ public class ExFinally {
         } catch (IOException e) {
             System.out.println("Could not read text form file.");
             e.printStackTrace();
+        }finally {
+            // connect DB
+            // close connection
+            System.out.println("Test Finally.");
         }
 
 
